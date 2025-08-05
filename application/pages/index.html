@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined&family=Material+Icons+Round&family=Material+Icons+Sharp&family=Material+Icons+Two+Tone" rel="stylesheet">
     <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/landingpage.css" />
+    <script src="../scripts/landing.js"></script>
     <title>Arcadians Shop</title>
 </head>
 <body>
@@ -208,7 +210,7 @@
             <div class="product-item">
                 <img src="../../assets/products/cosmetics/skincare-1.jpg" alt="Olive Oil Hair Serum" class="product-img">
                 <h3>Hair Olive Oil</h3>
-                <span>Rp 55.000</span>
+                <span class="price">Rp 55.000</span>
                     <div class="product-rating">
                         <span class="material-icons-outlined red">
                             star
@@ -227,7 +229,7 @@
                         </span>
                     </div>
                     <div class="flex-row gap-1 align-center">
-                        <button class="outline-btn w-full">See Product</button>
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">See Product</button>
                         <span class="material-icons-outlined">
                             shopping_cart
                         </span>
@@ -236,7 +238,7 @@
             <div class="product-item">
                 <img src="../../assets/products/computer/laptop-2.jpg" alt="Apple Macbook Air M2" class="product-img">
                 <h3>Apple Macbook Air M2</h3>
-                <span>Rp 15.500.000</span>
+                <span class="price">Rp 15.500.000</span>
                     <div class="product-rating">
                         <span class="material-icons-outlined red">
                             star
@@ -255,7 +257,7 @@
                         </span>
                     </div>
                     <div class="flex-row gap-1 align-center">
-                        <button class="outline-btn w-full">See Product</button>
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">See Product</button>
                         <span class="material-icons-outlined">
                             shopping_cart
                         </span>
@@ -264,7 +266,7 @@
             <div class="product-item">
                 <img src="../../assets/products/cosmetics/skincare-2.jpg" alt="Whitening Serum" class="product-img">
                 <h3>Whitening Serum</h3>
-                <span>Rp 35.000</span>
+                <span class="price">Rp 35.000</span>
                     <div class="product-rating">
                         <span class="material-icons-outlined red">
                             star
@@ -283,7 +285,7 @@
                         </span>
                     </div>
                     <div class="flex-row gap-1 align-center">
-                        <button class="outline-btn w-full">See Product</button>
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">See Product</button>
                         <span class="material-icons-outlined">
                             shopping_cart
                         </span>
@@ -292,7 +294,7 @@
             <div class="product-item">
                 <img src="../../assets/products/headset/airpods.jpg" alt="Apple Air Pods" class="product-img">
                 <h3>Apple Air Pods 2</h3>
-                <span>Rp 2.500.000</span>
+                <span class="price">Rp 2.500.000</span>
                     <div class="product-rating">
                         <span class="material-icons-outlined red">
                             star
@@ -311,7 +313,7 @@
                         </span>
                     </div>
                     <div class="flex-row gap-1 align-center">
-                        <button class="outline-btn w-full">See Product</button>
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">See Product</button>
                         <span class="material-icons-outlined">
                             shopping_cart
                         </span>
@@ -320,7 +322,7 @@
             <div class="product-item">
                 <img src="../../assets/products/headset/headset-2.jpg" alt="Xiaomi M12 Headphone" class="product-img">
                 <h3>Xiaomi M12 Headphone</h3>
-                <span>Rp 220.000</span>
+                <span class="price">Rp 220.000</span>
                     <div class="product-rating">
                         <span class="material-icons-outlined red">
                             star
@@ -339,7 +341,7 @@
                         </span>
                     </div>
                     <div class="flex-row gap-1 align-center">
-                        <button class="outline-btn w-full">See Product</button>
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">See Product</button>
                         <span class="material-icons-outlined">
                             shopping_cart
                         </span>
@@ -348,7 +350,7 @@
             <div class="product-item">
                 <img src="../../assets/products/phones/phone-3.jpg" alt="HUAWEI Pura 70 Ultra" class="product-img">
                 <h3>Huawei Pura 70 Ultra 16/512</h3>
-                <span>Rp 14.000.000</span>
+                <span class="price">Rp 14.000.000</span>
                     <div class="product-rating">
                         <span class="material-icons-outlined red">
                             star
@@ -367,7 +369,7 @@
                         </span>
                     </div>
                     <div class="flex-row gap-1 align-center">
-                        <button class="outline-btn w-full">See Product</button>
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">See Product</button>
                         <span class="material-icons-outlined">
                             shopping_cart
                         </span>
@@ -376,7 +378,7 @@
             <div class="product-item">
                 <img src="../../assets/products/phones/phone-4.jpg" alt="Apple Iphone 12 Black" class="product-img">
                 <h3>Apple Iphone 12 Black 8/128</h3>
-                <span>Rp 7.000.000</span>
+                <span class="price">Rp 7.000.000</span>
                     <div class="product-rating">
                         <span class="material-icons-outlined red">
                             star
@@ -395,7 +397,7 @@
                         </span>
                     </div>
                     <div class="flex-row gap-1 align-center">
-                        <button class="outline-btn w-full">See Product</button>
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">See Product</button>
                         <span class="material-icons-outlined">
                             shopping_cart
                         </span>
@@ -404,7 +406,7 @@
             <div class="product-item">
                 <img src="../../assets/products/shoes/shoes-2.jpg" alt="Adidas Continental 80 Rascal White " class="product-img">
                 <h3>Adidas Continental 80 Rascal White</h3>
-                <span>Rp 1.300.000</span>
+                <span class="price">Rp 1.300.000</span>
                     <div class="product-rating">
                         <span class="material-icons-outlined red">
                             star
@@ -423,7 +425,7 @@
                         </span>
                     </div>
                     <div class="flex-row gap-1 align-center">
-                        <button class="outline-btn w-full">See Product</button>
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">See Product</button>
                         <span class="material-icons-outlined">
                             shopping_cart
                         </span>
@@ -432,7 +434,7 @@
             <div class="product-item">
                 <img src="../../assets/products/watch/watch-3.jpg" alt="Seiko SKX013 200mm " class="product-img">
                 <h3>Seiko SKX013 200mm</h3>
-                <span>Rp 11.500.000</span>
+                <span class="price">Rp 11.500.000</span>
                     <div class="product-rating">
                         <span class="material-icons-outlined red">
                             star
@@ -451,7 +453,7 @@
                         </span>
                     </div>
                     <div class="flex-row gap-1 align-center">
-                        <button class="outline-btn w-full">See Product</button>
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">See Product</button>
                         <span class="material-icons-outlined">
                             shopping_cart
                         </span>
@@ -460,7 +462,7 @@
             <div class="product-item">
                 <img src="../../assets/products/watch/watch-5.jpg" alt="Casio AE-1200WHD-1AV " class="product-img">
                 <h3>Casio AE-1200WHD-1AV</h3>
-                <span>Rp 500.000</span>
+                <span class="price">Rp 500.000</span>
                     <div class="product-rating">
                         <span class="material-icons-outlined red">
                             star
@@ -479,7 +481,7 @@
                         </span>
                     </div>
                     <div class="flex-row gap-1 align-center">
-                        <button class="outline-btn w-full">See Product</button>
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">See Product</button>
                         <span class="material-icons-outlined">
                             shopping_cart
                         </span>
@@ -488,7 +490,7 @@
             <div class="product-item">
                 <img src="../../assets/products/bag/bag-2.jpg" alt="Cartier White Almond Bag " class="product-img">
                 <h3>Cartier White Almond Bag</h3>
-                <span>Rp 5.000.000</span>
+                <span class="price">Rp 5.000.000</span>
                     <div class="product-rating">
                         <span class="material-icons-outlined red">
                             star
@@ -507,7 +509,7 @@
                         </span>
                     </div>
                     <div class="flex-row gap-1 align-center">
-                        <button class="outline-btn w-full">See Product</button>
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">See Product</button>
                         <span class="material-icons-outlined">
                             shopping_cart
                         </span>
@@ -516,7 +518,7 @@
             <div class="product-item">
                 <img src="../../assets/products/computer/pc-2.jpg" alt="Apple Mac Mini" class="product-img">
                 <h3>Apple Mac Mini</h3>
-                <span>Rp 10.000.000</span>
+                <span class="price">Rp 10.000.000</span>
                     <div class="product-rating">
                         <span class="material-icons-outlined red">
                             star
@@ -535,7 +537,7 @@
                         </span>
                     </div>
                     <div class="flex-row gap-1 align-center">
-                        <button class="outline-btn w-full">See Product</button>
+                        <button class="outline-btn w-full" onclick="onProductClick(this)">See Product</button>
                         <span class="material-icons-outlined">
                             shopping_cart
                         </span>
